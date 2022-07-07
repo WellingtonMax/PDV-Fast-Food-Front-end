@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">LovBurger</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="/public/index.html">Pedidos</a></li>
+          <li><a href="/src/pages/cozinha.html">Cozinha</a></li>
+          <li><a href="/src/pages/retirada.html">Retirada</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="title-category">Categorias</h2>
+      <p>Navegue por uma das categorias</p>
+      <div class="category">
+        <span
+          ><p>Combos</p>
+          <button>
+            <img src="/img/combo.jpg" alt="" width="180" height="120" /></button
+        ></span>
+        <span
+          ><p>Acompanhamentos</p>
+          <button>
+            <img
+              src="/img/acompanhamento.jpg"
+              alt=""
+              width="180"
+              height="120"
+            /></button
+        ></span>
+        <span
+          ><p>Bebidas</p>
+          <button>
+            <img src="/img/bebidas.jpg" alt="" width="180" height="120" /></button
+        ></span>
+        <span
+          ><p>Sobremesas</p>
+          <button>
+            <img src="/img/dessert.jpg" alt="" width="180" height="120" /></button
+        ></span>
+      </div>
+      <h2>Produtos</h2>
+      <div class="burger-area"></div>
+      <div class="models">
+        <div class="burger-item">
+          <a href="">
+            <div class="burger-item--img">
+              <img src="" alt="" height="100" width="100" />
+            </div>
+            <div class="burger-item--add">+</div>
+          </a>
+          <div class="adc">
+          </div>
+          <div class="burger-item--name">--</div>
+          <div class="burger-item--price">R$ --</div>
+          <div class="burger-item--desc">--</div>
+        </div>
+    </main>
+
+    <div class="burgerWindowArea">
+      <div class="burgerWindowBody">
+        <div class="burgerInfo">
+          <div class="burger-info--img">
+            <img src="" alt="" height="100" width="100" />
+          </div>
+          <h1>--</h1>
+          <div class="burgerInfo--desc"></div>
+          <div class="burgerInfo--pricearea">
+            <div class="burgerInfo--sector">Preço</div>
+            <div class="burgerInfo--price">
+              <div class="burgerInfo--actualPrice">R$ --</div>
+              <div class="burgerInfo--qtarea">
+                <button class="burgerInfo--qtmenos">-</button>
+                <div class="burgerInfo--qt">1</div>
+                <button class="burgerInfo--qtmais">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="burgerInfo--addButton">Adicionar pedido</div>
+          <div class="burgerInfo--cancelButton">Cancelar</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/public/burger.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/src/mobile-navbar.js"></script>
+  </body>
+  <footer></footer>
+</html>
