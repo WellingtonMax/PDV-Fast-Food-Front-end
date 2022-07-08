@@ -1,7 +1,7 @@
 # 🍔 LovBurger 🍔
 
 
-🚧 🚀 Em construção... 🚧
+# 🚧 🚀 Em construção... 🚧
 
 
 # 📋Guia
