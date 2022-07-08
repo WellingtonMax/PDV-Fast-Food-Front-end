@@ -35,11 +35,17 @@ nav {
 }
 
 body {
-  background: url("/img/hamb.png") no-repeat center center;
+  background: url("") no-repeat center center;
   background-size: cover;
   background-repeat: repeat;
   height: 100vh;
   width: 100vw;
+}
+
+main {
+  font-family: "Bellerose";
+  color: #ffd000;
+  background-color: #000000;
 }
 
 .nav-list {
@@ -60,7 +66,7 @@ body {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: rgb(255, 208, 0);
+  background: #ffd000;
   margin: 8px;
   transition: 0.3s;
 }
@@ -75,7 +81,7 @@ body {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: #000000;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -137,6 +143,24 @@ body {
   display: none;
   font-size: 30px;
 }
+
+.title-category {
+  padding-left: 44%;
+}
+
+p {
+  display: flex;
+  padding-left: 13%;
+}
+
+h2 {
+  padding-left: 45%;
+}
+
+h4 {
+  padding-left: 40%;
+}
+
 .category {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -154,15 +178,10 @@ body {
 }
 .burger-item {
   max-width: 250px;
-  color: #efdf00;
+  color: #ffd000;
   font-family: "Bellerose";
   opacity: 1;
   border-radius: 15%;
-}
-
-.burger-item {
-  background-image: url(/img/hambackground.jpg);
-  background-size: 220%;
 }
 
 .burger-item a {
@@ -170,13 +189,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-}
-
-.adc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
 }
 
 .burger-item--add {
@@ -189,20 +201,6 @@ body {
   text-align: center;
   color: #fff;
   font-size: 22px;
-  cursor: pointer;
-  margin-top: 5px;
-  transition: all ease 0.2s;
-}
-
-.burger-item--sub {
-  width: 20px;
-  height: 20px;
-  line-height: 0px;
-  border-radius: 15px;
-  background-color: #d32f2f;
-  text-align: center;
-  color: #fff;
-  font-size: 2 px;
   cursor: pointer;
   margin-top: 5px;
   transition: all ease 0.2s;
@@ -226,8 +224,7 @@ body {
 }
 
 .burger-item--desc {
-  padding-left: 50px;
-  padding-bottom: 30px;
+  margin: 5%;
   font-size: 13px;
   margin-top: 10px;
 }
@@ -259,12 +256,19 @@ body {
   display: grid;
   grid-template-columns: 85%;
   justify-content: center;
+  align-items: center;
   flex: 1;
   padding-top: 10%;
 }
 
+.burger-info--img img {
+  margin-left: 320px;
+  border-radius: 50%;
+}
+
 .burgerInfo h1 {
   margin-top: 10px;
+  margin-left: 290px;
 }
 
 .burgerInfo--name {
@@ -280,6 +284,7 @@ body {
 }
 
 .burgerInfo--sector {
+  margin-left: 130px;
   padding-left: 30%;
   color: #ccc;
   text-transform: uppercase;
@@ -289,6 +294,7 @@ body {
 }
 
 .burgerInfo--price {
+  margin-left: 300px;
   display: flex;
   padding-left: 5%;
 }
@@ -320,10 +326,12 @@ body {
   font-size: 12px;
   font-weight: bold;
   padding: 0px 5px;
-  color: #000;
+  color: #000000;
 }
 
 .burgerInfo--addButton {
+  margin-left: 280px;
+  max-width: 20%;
   margin-top: 30px;
   padding: 20px 30px;
   border-radius: 20px;
@@ -339,6 +347,8 @@ body {
 }
 
 .burgerInfo--cancelButton {
+  max-width: 20%;
+  margin-left: 280px;
   margin-top: 30px;
   padding: 20px 30px;
   border-radius: 20px;
@@ -351,17 +361,4 @@ body {
 
 .burgerInfo--cancelButton:hover {
   background-color: #a34332;
-}
-
-.burgerInfo--cancelMobileButton {
-  display: none;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-bottom: 30px;
-}
-
-main {
-  font-family: "Bellerose";
-  color: #efdf00;
 }

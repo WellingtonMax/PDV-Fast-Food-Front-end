@@ -1,5 +1,21 @@
+let modalKey = 0;
+
+let quantBurgers = 1;
+
+let cart = [];
+
 const seleciona = (elemento) => document.querySelector(elemento);
 const selecionaTodos = (elemento) => document.querySelectorAll(elemento);
+
+const formatoReal = (valor) => {
+  return valor.toLocalString("pt-BR", { style: "currency", currency: "BRL" });
+};
+
+const formatoMonetario = (valor) => {
+  if (valor) {
+    return valor.toFixed(2);
+  }
+};
 
 const abrirModal = () => {
   seleciona(".burgerWindowArea").style.opacity = 0;
@@ -40,6 +56,19 @@ const preencherDadosModal = (item) => {
   )}`;
 };
 
+const mudarQuantidade = () => {
+  seleciona(".burgerInfo--qtmais").addEventListener("click", () => {
+    quantBurgers++;
+    seleciona(".burgerInfo--qt").innerHTML = quantBurgers;
+  });
+  seleciona(".burgerInfo--qtmenos").addEventListener("click", () => {
+    if (quantBurgers > 1) {
+      quantBurgers--;
+      seleciona(".burgerInfo--qt").innerHTML = quantBurgers;
+    }
+  });
+};
+
 lovBurgerJson.map((item, index) => {
   let burgerItem = document
     .querySelector(".models .burger-item")
@@ -58,3 +87,5 @@ lovBurgerJson.map((item, index) => {
 
   botoesFechar();
 });
+
+mudarQuantidade();
