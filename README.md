@@ -67,10 +67,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
   </tr>
 </table>
 
-
-
-## 🤝 Contribuições
-
 ---
 
 <h1> Gostou? Deixe uma estrelinha para ajudar o projeto ⭐ <h1\>
