@@ -3,7 +3,7 @@
 # 📋Guia
 
 - [Descrição](#📝-descrição)
-- [Objetivos e features] (# 🎯Objetivos & 💾Features)
+- [Objetivos](#🎯-Objetivos-&-💾Features)
 - [Como Executar](#🖥️-como-executar)
 - [Tecnologias](#🛠-tecnologias)
 - [Métodos](#métodos)
